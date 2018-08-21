@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string>
+#include <conio.h>
+
 using namespace std;
 
 int main()
 {
     string NAME;
     int result = 0;
-    cout << "Nhap vao NAME : ";  // NAME không được vượt quá 11 ký tự. 
+    cout << "Nhap vao NAME : ";  // NAME không được vượt quá 11 ký tự.
     getline(cin, NAME);
 
     for (int i = 0; i < NAME.length(); i++)
@@ -28,6 +30,7 @@ int main()
     result = result ^ 0x5678;
     int serial = result ^ 0x1234;
     cout <<"Serial can nhap la :" << serial <<endl;
-    system("pause");
+    getche();
     return 0;
 }
+
